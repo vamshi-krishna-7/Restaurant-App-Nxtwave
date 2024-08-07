@@ -1,10 +1,7 @@
 .dish-item-container {
   border: 1px solid gray;
   border-radius: 12px;
-  justify-content: space-around;
-  display: flex;
-  margin-bottom: 10px;
-  padding: 10px;
+  justify-content: space-between;
 }
 
 .veg-border {
@@ -28,25 +25,8 @@
   background-color: #92282a;
 }
 
-@media screen and (max-width: 576px) {
-  .veg-round {
-    height: 12px;
-    width: 12px;
-  }
-  .non-veg-round {
-    height: 12px;
-    width: 12px;
-  }
-}
-
 .dish-details-container {
   flex-grow: 1;
-}
-
-@media screen and (max-width: 576px) {
-  .dish-details-container {
-    flex-wrap: wrap;
-  }
 }
 
 .dish-name {
@@ -74,26 +54,12 @@
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 576px) {
-  .dish-name {
-    font-size: 16px;
-  }
-  .dish-currency-price {
-    font-size: 12px;
-  }
-  .dish-description {
-    font-size: 12px;
-  }
-}
-
 .controller-container {
-  width: 120px;
+  width: fit-content;
   min-width: 150px;
   justify-content: space-between;
   padding: 10px;
   border-radius: 50px;
-  background-color: #00923f;
-  display: flex;
 }
 
 .button {
@@ -140,14 +106,4 @@
   height: 150px;
   border-radius: 12px;
   align-self: flex-start;
-}
-
-@media screen and (max-width: 576px) {
-  .dish-calories {
-    font-size: 12px;
-  }
-  .dish-image {
-    height: 100px;
-    width: 100px;
-  }
 }
